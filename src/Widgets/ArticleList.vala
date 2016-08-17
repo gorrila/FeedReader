@@ -126,7 +126,7 @@ public class FeedReader.articleList : Gtk.Overlay {
 						var tmpRow = row as articleRow;
 						if(tmpRow != null && tmpRow.isBeingRevealed())
 						{
-							if((!tmpRow.isUnread() && m_only_unread)
+							if((!tmpRow.isUnread() && m_only_unread && !settings_tweaks.get_boolean("keep-unread-articles"))
 							|| (!tmpRow.isMarked() && m_only_marked)
 							|| (m_IDtype == FeedListType.TAG && !tmpRow.hasTag(m_current_feed_selected)))
 							{

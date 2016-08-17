@@ -98,5 +98,12 @@
 			</description>
 		</key>
 
+		<key name="keep-unread-temporarily" type="b">
+			<default>true</default>
+			<summary>Keep read articles temporarily in 'Unread'-view</summary>
+			<description>
+				Keep read articles temporarily in 'Unread'-view until list is reloaded
+			</description>
+		</key>
 	</schema>
 </schemalist>
